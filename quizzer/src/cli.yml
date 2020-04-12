@@ -1,0 +1,14 @@
+name: quizzer
+version: "1.0"
+author: Ryan D. <dsouza.ryan.11@gmail.com>
+about: Quizzes from a csv with a timer
+args:
+  - csv:
+      help: "A csv file in the format of 'question,answer'"
+      default_value: problems.csv
+      required: true
+      index: 1
+  - verbose:
+      short: v
+      multiple: true
+      help: Sets the level of verbosity
